@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-03-02T15:19:25.114Z</updated>
+  <updated>2022-03-02T15:20:49.613Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>First Article</title>
+    <title>Motto</title>
     <link href="http://yoursite.com/2022/02/28/article/"/>
     <id>http://yoursite.com/2022/02/28/article/</id>
     <published>2022-02-28T15:41:48.000Z</published>
-    <updated>2022-03-02T15:19:25.114Z</updated>
+    <updated>2022-03-02T15:20:49.613Z</updated>
     
     <content type="html"><![CDATA[<p>Although  we try our best,sometimes our paintings rarely turn out as originally planned. Changes in the light,the limitations of your painting materials,and the lack of experience and technique mean that what you start out trying to achieve may not come to life the way that you expected.</p>]]></content>
     
