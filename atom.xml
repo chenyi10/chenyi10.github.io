@@ -3,14 +3,14 @@
   <title>Chen Yi</title>
   <icon>https://www.gravatar.com/avatar/179e72d46e7e00986dde65d2ca061bdd</icon>
   <subtitle>to be continued...</subtitle>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://chenyi10.github.io/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://chenyi10.github.io/"/>
   <updated>2022-03-02T15:20:49.613Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://chenyi10.github.io/</id>
   
   <author>
-    <name>Yourname</name>
+    <name>chenyi</name>
     <email>1578807751@qq.com</email>
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Motto</title>
-    <link href="http://yoursite.com/2022/02/28/article/"/>
-    <id>http://yoursite.com/2022/02/28/article/</id>
+    <link href="http://chenyi10.github.io/2022/02/28/article/"/>
+    <id>http://chenyi10.github.io/2022/02/28/article/</id>
     <published>2022-02-28T15:41:48.000Z</published>
     <updated>2022-03-02T15:20:49.613Z</updated>
     
@@ -34,14 +34,14 @@
     
     
     
-    <category term="宝剑锋从磨砺出" scheme="http://yoursite.com/tags/%E5%AE%9D%E5%89%91%E9%94%8B%E4%BB%8E%E7%A3%A8%E7%A0%BA%E5%87%BA/"/>
+    <category term="宝剑锋从磨砺出" scheme="http://chenyi10.github.io/tags/%E5%AE%9D%E5%89%91%E9%94%8B%E4%BB%8E%E7%A3%A8%E7%A0%BA%E5%87%BA/"/>
     
   </entry>
   
   <entry>
     <title>自动化</title>
-    <link href="http://yoursite.com/2022/02/28/hello-world/"/>
-    <id>http://yoursite.com/2022/02/28/hello-world/</id>
+    <link href="http://chenyi10.github.io/2022/02/28/hello-world/"/>
+    <id>http://chenyi10.github.io/2022/02/28/hello-world/</id>
     <published>2022-02-28T15:20:53.411Z</published>
     <updated>2022-03-02T16:13:40.021Z</updated>
     
@@ -56,7 +56,7 @@
     
     
     
-    <category term="python selenium 模块实现学校每日填报" scheme="http://yoursite.com/tags/python-selenium-%E6%A8%A1%E5%9D%97%E5%AE%9E%E7%8E%B0%E5%AD%A6%E6%A0%A1%E6%AF%8F%E6%97%A5%E5%A1%AB%E6%8A%A5/"/>
+    <category term="python selenium 模块实现学校每日填报" scheme="http://chenyi10.github.io/tags/python-selenium-%E6%A8%A1%E5%9D%97%E5%AE%9E%E7%8E%B0%E5%AD%A6%E6%A0%A1%E6%AF%8F%E6%97%A5%E5%A1%AB%E6%8A%A5/"/>
     
   </entry>
   
