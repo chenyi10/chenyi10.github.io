@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-03-02T05:24:47.803Z</updated>
+  <updated>2022-03-02T15:19:25.114Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,11 +21,20 @@
     <link href="http://yoursite.com/2022/02/28/article/"/>
     <id>http://yoursite.com/2022/02/28/article/</id>
     <published>2022-02-28T15:41:48.000Z</published>
-    <updated>2022-03-02T05:24:47.803Z</updated>
+    <updated>2022-03-02T15:19:25.114Z</updated>
+    
+    <content type="html"><![CDATA[<p>Although  we try our best,sometimes our paintings rarely turn out as originally planned. Changes in the light,the limitations of your painting materials,and the lack of experience and technique mean that what you start out trying to achieve may not come to life the way that you expected.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Although  we try our best,sometimes our paintings rarely turn out as originally planned. Changes in the light,the limitations of your pai</summary>
+      
     
     
     
     
+    <category term="宝剑锋从磨砺出" scheme="http://yoursite.com/tags/%E5%AE%9D%E5%89%91%E9%94%8B%E4%BB%8E%E7%A3%A8%E7%A0%BA%E5%87%BA/"/>
     
   </entry>
   
