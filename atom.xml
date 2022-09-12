@@ -6,7 +6,7 @@
   <link href="http://chenyi10.github.io/atom.xml" rel="self"/>
   
   <link href="http://chenyi10.github.io/"/>
-  <updated>2022-09-12T15:41:22.503Z</updated>
+  <updated>2022-09-12T15:58:56.238Z</updated>
   <id>http://chenyi10.github.io/</id>
   
   <author>
@@ -17,27 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>ArrayList</title>
     <link href="http://chenyi10.github.io/2022/09/12/%E9%9D%A2%E8%AF%95%E9%A2%98Day1/"/>
     <id>http://chenyi10.github.io/2022/09/12/%E9%9D%A2%E8%AF%95%E9%A2%98Day1/</id>
-    <published>2022-09-12T15:26:15.498Z</published>
-    <updated>2022-09-12T15:41:22.503Z</updated>
+    <published>2022-09-12T15:40:20.000Z</published>
+    <updated>2022-09-12T15:58:56.238Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>title : ArrayList</p><p>data : 2022-09-12 23:40</p><p>tags : 面试题</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<hr>]]></content>
     
     
       
       
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;title : ArrayList&lt;/p&gt;
-&lt;p&gt;data : 2022-09-12 23:40&lt;/p&gt;
-&lt;p&gt;tags : 面试题&lt;/p&gt;
-&lt;/blockquote&gt;
+    <summary type="html">&lt;hr&gt;
 </summary>
       
     
     
     
+    
+    <category term="面试题" scheme="http://chenyi10.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
@@ -78,6 +76,52 @@
       
     <summary type="html">&lt;hr&gt;
 &lt;h1 id=&quot;加载驱动&quot;&gt;&lt;a href=&quot;#加载驱动&quot; class=&quot;headerlink&quot; title=&quot;加载驱动&quot;&gt;&lt;/a&gt;加载驱动&lt;/h1&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://chenyi10.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线程池</title>
+    <link href="http://chenyi10.github.io/2022/04/02/%E7%BA%BF%E7%A8%8B%E6%B1%A0/"/>
+    <id>http://chenyi10.github.io/2022/04/02/%E7%BA%BF%E7%A8%8B%E6%B1%A0/</id>
+    <published>2022-04-02T15:26:50.000Z</published>
+    <updated>2022-09-12T15:58:17.705Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="线程池的状态有哪些？获取多线程并发执行结果的方式有哪些？"><a href="#线程池的状态有哪些？获取多线程并发执行结果的方式有哪些？" class="headerlink" title="线程池的状态有哪些？获取多线程并发执行结果的方式有哪些？"></a>线程池的状态有哪些？获取多线程并发执行结果的方式有哪些？</h1><p>线程池和线程的状态是不一样的，线程池有这几个状态：</p><p>RUNNING,SHUTDOWN,STOP,TIDYING,TERMINATED</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> RUNING=-<span class="number">1</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> SHUTDOWN=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> STOP=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> TIDYING=<span class="number">2</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> TERMINATED=<span class="number">3</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li><h2 id="RUNNING"><a href="#RUNNING" class="headerlink" title="RUNNING"></a>RUNNING</h2><p>(1) 状态说明：线程池处在RUNNING状态时，能够接收新任务，以及对已添加的任务进行处理。<br>(2) 状态切换：线程池的初始化状态是RUNNING。</p></li><li><h2 id="SHUTDOWN"><a href="#SHUTDOWN" class="headerlink" title="SHUTDOWN"></a>SHUTDOWN</h2><p>(1) 状态说明：线程池处在SHUTDOWN状态时，不接收新任务，但能处理已添加的任务。<br>(2) 状态切换：调用线程池的shutdown()接口时，线程池由RUNNING -&gt; SHUTDOWN。</p></li><li><h2 id="STOP"><a href="#STOP" class="headerlink" title="STOP"></a>STOP</h2><p>(1) 状态说明：线程池处在STOP状态时，不接收新任务，不处理已添加的任务，并且会中断正在处理的任务。<br>(2) 状态切换：调用线程池的shutdownNow()接口时，线程池由RUNNING  -&gt; STOP</p></li><li><h2 id="TIDYING"><a href="#TIDYING" class="headerlink" title="TIDYING"></a>TIDYING</h2><p>(1) 状态说明：当所有的任务已终止，ctl记录的”任务数量”为0，线程池会变为TIDYING状态。当线程池变为TIDYING状态时，会执行钩子函数terminated()。terminated()在ThreadPoolExecutor类中是空的，若用户想在线程池变为TIDYING时，进行相应的处理；可以通过重载terminated()函数来实现。<br>(2) 状态切换：当线程池在SHUTDOWN状态下，阻塞队列为空并且线程池中执行的任务也为空时，就会由 SHUTDOWN -&gt; TIDYING。<br>当线程池在STOP状态下，线程池中执行的任务为空时，就会由STOP -&gt; TIDYING。</p></li><li><h2 id="TERMINATED"><a href="#TERMINATED" class="headerlink" title="TERMINATED"></a>TERMINATED</h2></li><li><p>(1) 状态说明：线程池彻底终止，就变成TERMINATED状态。<br>(2) 状态切换：线程池处在TIDYING状态时，执行完terminated()之后，就会由 TIDYING -&gt; TERMINATED。</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;h1 id=&quot;线程池的状态有哪些？获取多线程并发执行结果的方式有哪些？&quot;&gt;&lt;a href=&quot;#线程池的状态有哪些？获取多线程并发执行结果的方式有哪些？&quot; class=&quot;headerlink&quot; title=&quot;线程池的状态有哪些？获取多线程并发执行结果的方式有哪些？&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://chenyi10.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>注解与反射（一）</title>
+    <link href="http://chenyi10.github.io/2022/04/02/%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/"/>
+    <id>http://chenyi10.github.io/2022/04/02/%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/</id>
+    <published>2022-04-02T08:44:20.000Z</published>
+    <updated>2022-09-12T15:56:46.666Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h1><p>meta-annotation<br>@Target 表示注解可以用在哪些地方<br>@Retention   表示注解在上面地方有效runtime &gt; class &gt; source<br>@Document 表示是否将我们的注解包含在javadoc中<br>@Inherited子类可以继承父类中该注解</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.ElementType;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Retention;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.RetentionPolicy;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Target;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test03</span> &#123;</span><br><span class="line">    <span class="meta">@myannotation(name = &quot;cy&quot;,age = 20)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@myannotation2(&quot;cy&quot;)</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE,ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> myannotation&#123;</span><br><span class="line">    String <span class="title function_">name</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">age</span><span class="params">()</span><span class="keyword">default</span> <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">id</span><span class="params">()</span> <span class="keyword">default</span> -<span class="number">1</span>;<span class="comment">//代表不存在</span></span><br><span class="line">    String []s()<span class="keyword">default</span> &#123;<span class="string">&quot;西南大学&quot;</span>&#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE,ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> myannotation2 &#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;h1 id=&quot;注解&quot;&gt;&lt;a href=&quot;#注解&quot; class=&quot;headerlink&quot; title=&quot;注解&quot;&gt;&lt;/a&gt;注解&lt;/h1&gt;&lt;p&gt;meta-annotation&lt;br&gt;@Target 表示注解可以用在哪些地方&lt;br&gt;@Retention   表示注解在上面地方</summary>
       
     
     

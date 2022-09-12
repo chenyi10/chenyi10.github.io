@@ -11,6 +11,24 @@
   </url>
   
   <url>
+    <loc>http://chenyi10.github.io/2022/04/02/%E7%BA%BF%E7%A8%8B%E6%B1%A0/</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://chenyi10.github.io/2022/04/02/%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://chenyi10.github.io/2022/07/15/Spring/</loc>
     
     <lastmod>2022-09-08</lastmod>
@@ -109,6 +127,13 @@
   
   <url>
     <loc>http://chenyi10.github.io/tags/python-%E5%AE%9E%E7%8E%B0%E5%AD%A6%E6%A0%A1%E6%AF%8F%E6%97%A5%E5%A1%AB%E6%8A%A5/</loc>
+    <lastmod>2022-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://chenyi10.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
