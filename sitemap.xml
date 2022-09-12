@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://chenyi10.github.io/2022/07/15/Spring/</loc>
+    <loc>http://chenyi10.github.io/2022/09/12/%E9%9D%A2%E8%AF%95%E9%A2%98Day1/</loc>
     
-    <lastmod>2022-09-08</lastmod>
+    <lastmod>2022-09-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://chenyi10.github.io/2022/04/06/%E7%BA%BF%E7%A8%8B%E6%B1%A0/</loc>
+    <loc>http://chenyi10.github.io/2022/07/15/Spring/</loc>
     
-    <lastmod>2022-04-22</lastmod>
+    <lastmod>2022-09-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -30,15 +30,6 @@
   
   <url>
     <loc>http://chenyi10.github.io/2022/02/28/selenium/</loc>
-    
-    <lastmod>2022-04-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://chenyi10.github.io/2022/04/02/%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/</loc>
     
     <lastmod>2022-04-22</lastmod>
     
@@ -103,7 +94,7 @@
 
   <url>
     <loc>http://chenyi10.github.io/</loc>
-    <lastmod>2022-09-08</lastmod>
+    <lastmod>2022-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,14 +102,14 @@
   
   <url>
     <loc>http://chenyi10.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-09-08</lastmod>
+    <lastmod>2022-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://chenyi10.github.io/tags/python-%E5%AE%9E%E7%8E%B0%E5%AD%A6%E6%A0%A1%E6%AF%8F%E6%97%A5%E5%A1%AB%E6%8A%A5/</loc>
-    <lastmod>2022-09-08</lastmod>
+    <lastmod>2022-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
