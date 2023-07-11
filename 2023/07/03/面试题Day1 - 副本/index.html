@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><meta name="author" content="chenyi"><meta name="renderer" content="webkit"><meta name="copyright" content="chenyi"><meta name="keywords" content="Chen Yi"><meta name="description" content="My blog"><meta name="Cache-Control" content="no-cache"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>魏宝 · Mr.Chen's Blog</title><link rel="stylesheet" href="/css/style.css?v=2018.7.9"><link rel="stylesheet" href="/css/animation.css?v=2018.7.9"><link rel="icon" href="/img/assets/R-C.ico"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6"><!-- scripts--><script>(function( w ){
+  "use strict";
+  // rel=preload support test
+  if( !w.loadCSS ){
+    w.loadCSS = function(){};
+  }
+  // define on the loadCSS obj
+  var rp = loadCSS.relpreload = {};
+  // rel=preload feature support test
+  // runs once and returns a function for compat purposes
+  rp.support = (function(){
+    var ret;
+    try {
+      ret = w.document.createElement( "link" ).relList.supports( "preload" );
+    } catch (e) {
+      ret = false;
+    }
+    return function(){
+      return ret;
+    };
+  })();
+
+  // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+  // then change that media back to its intended value on load
+  rp.bindMediaToggle = function( link ){
+    // remember existing media attr for ultimate state, or default to 'all'
+    var finalMedia = link.media || "all";
+
+    function enableStylesheet(){
+      link.media = finalMedia;
+    }
+
+    // bind load handlers to enable media
+    if( link.addEventListener ){
+      link.addEventListener( "load", enableStylesheet );
+    } else if( link.attachEvent ){
+      link.attachEvent( "onload", enableStylesheet );
+    }
+
+    // Set rel and non-applicable media type to start an async request
+    // note: timeout allows this to happen async to let rendering continue in IE
+    setTimeout(function(){
+      link.rel = "stylesheet";
+      link.media = "only x";
+    });
+    // also enable media after 3 seconds,
+    // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+    setTimeout( enableStylesheet, 3000 );
+  };
+
+  // loop through link elements in DOM
+  rp.poly = function(){
+    // double check this to prevent external calls from running
+    if( rp.support() ){
+      return;
+    }
+    var links = w.document.getElementsByTagName( "link" );
+    for( var i = 0; i < links.length; i++ ){
+      var link = links[ i ];
+      // qualify links to those with rel=preload and as=style attrs
+      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+        // prevent rerunning on link
+        link.setAttribute( "data-loadcss", true );
+        // bind listeners to toggle media back
+        rp.bindMediaToggle( link );
+      }
+    }
+  };
+
+  // if unsupported, run the polyfill
+  if( !rp.support() ){
+    // run once at least
+    rp.poly();
+
+    // rerun poly on an interval until onload
+    var run = w.setInterval( rp.poly, 500 );
+    if( w.addEventListener ){
+      w.addEventListener( "load", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    } else if( w.attachEvent ){
+      w.attachEvent( "onload", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    }
+  }
+
+
+  // commonjs
+  if( typeof exports !== "undefined" ){
+    exports.loadCSS = loadCSS;
+  }
+  else {
+    w.loadCSS = loadCSS;
+  }
+}( typeof global !== "undefined" ? global : this ) );</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" defer></script><script src="/js/main.js?v=2018.7.9" defer></script><!-- fancybox--><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script><!-- busuanzi--><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Chen Yi" type="application/atom+xml">
+</head><body><section class="profile-close" id="cxo-profile"><div class="profile-avatar"><i class="fa fa-caret-left"></i><img src="/img/assets/R-C.jpg"></div><!--.profile-saying
+  i.fa.fa-comment
+  .saying--><div class="cxo-profile-inner"><div class="profile-name">cy</div><div class="profile-signature">to be continued</div><div class="friends"><div>FRIENDS</div><span><a href="//github.com/Longlongyu" target="_black">friendA</a></span><span><a href="//github.com/" target="_black">friendB</a></span><span><a href="//github.com/" target="_black">friendC</a></span></div><div class="read-progress"></div></div></section><header id="cxo-intro" style="height: 70vh;background-image: url(/img/intro/index-bg.jpg);"><nav id="cxo-intro-nav"><section><div class="intro-nav-title"><a href="/">Mr.Chen's Blog</a></div><div class="intro-nav-label-box"><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a><a href="/tags/">Tags</a></div><i class="fa fa-bars intro-nav-menu"><div class="intro-nav-drop"><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a><a href="/tags/">Tags</a></div></i><div class="clear"></div></section></nav><h1 class="post-title">魏宝</h1><div class="post-intros"><div class="post-intro-meta"><span class="post-intro-time"><i class="post-intro-calendar fa fa-calendar"></i><span>2023-07-03</span></span><span class="post-intro-tags"><a class="intro-tag fa fa-tag" href="javascript:void(0)" date-tags="恋爱笔记"> 恋爱笔记</a></span></div><div class="post-intro-read"><span> Word count: <span class="post-count">600</span> | Reading time: <span class="post-count">2</span>min</span></div></div></header><article class="cxo-up" id="cxo-content-outer"><section id="cxo-content-inner"><article class="article-entry" id="post"><hr>
+<h2 id="电子情书（bushi）"><a href="#电子情书（bushi）" class="headerlink" title="电子情书（bushi）"></a>电子情书（bushi）</h2><p>哼，小样，还不是被哥给拿下啦。😘</p>
+<p>好吧，我承认，其实我很早就对你有意思啦。可能是第一次听你声音？也可能是第一次看见你照片？当时心想，这是什么究极无敌可爱的漂亮妹妹啊，简直可爱到我心坎里去了，然后后面就一直对你欲罢不能？之后表白的时候，就感觉自己配不上你，你肯定会拒绝的，结果表白的像依托答辩？啊！真的是蠢死我啦，想想有点后悔哦，当然啦，现在喜欢你可不仅仅是因为这些啦，还因为你…..（此处省略赞美语言9999字，开通VIP解锁全文）</p>
+<p>我感觉我们两人好多方面都好像哦，不管是性格，还是爱好什么的，我原来甚至感觉你就是女版的我？不知道，可能是继承了为父的基因吧！</p>
+<p>也正因为这样，所以我们才能这么合得来吧，相处起来挺舒服的。相处了这么久，我自认为还是蛮了解你的了，原来还以为你是一个纯洁美少女呢，我呸，结果是个小变态，还天天勾引我，不过我喜欢，嘿嘿💕。虽然才在一起几天，但是为什么感觉我们好像在一起挺长时间了嘞，奇怪。喔，可能是我们互相陪伴了挺长一段时间吧，我们一起玩光遇（还是我崽子来着，现在升级为CP了？），玩蛋崽（你真是个小菜蛋）玩吃鸡（两个菜鸡的游戏体验也太差了吧），玩饥荒（感觉你应该不是很喜欢玩吧，就是来陪我的，感动，泪目，抹会眼泪再说），玩王者（喊老公，哥哥带你飞！），还一起听歌，一起刷视频，嗯，陪了我挺长一段时间，太感谢你啦，小魏同学。嘴一个😘😘😘😘😘</p>
+<p>等以后见面了，一定要亲个够！笑死我了，你不是不网恋的来着嘛，嗯？哎，我这该死的魅力，啊哈哈哈哈哈哈哈哈哈哈。</p>
+<p>今后，有我在，受委屈了及时和我说昂，不要一个人憋着咯，也不要一个人生闷气哦，想我了就找我，我随时都在！爱你爱你😘</p>
+<p>遇见你真好！</p>
+<p>爱你哟！小魏同学</p>
+</article><!-- lincense--><div class="license-wrapper"><p> <span>Author:  </span><a href="http://chenyi10.github.io">chenyi</a></p><p> <span>Link:  </span><a href="http://chenyi10.github.io/2023/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98Day1%20-%20%E5%89%AF%E6%9C%AC/">http://chenyi10.github.io/2023/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98Day1%20-%20%E5%89%AF%E6%9C%AC/</a></p><p> <span>Copyright:  </span><span>All articles in this blog are licensed under <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0">CC BY-NC-SA 3.0</a> unless stating additionally.</span></p></div><div class="post-paginator"><a class="nextSlogan" href="/2022/09/12/%E9%9D%A2%E8%AF%95%E9%A2%98Day1/" title="ArrayList"><span>NextPost ></span><br><span class="nextTitle">ArrayList</span></a><div class="clear"></div></div><div id="comment"><div id="SOHUCS" sid="/2023/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98Day1%20-%20%E5%89%AF%E6%9C%AC/"></div><script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script><script>window.changyan.api.config({appid: 'cyw0KzJOF', conf: 'b0100901d72ed2e7f4439c953853b95e'});</script></div></section></article><footer id="cxo-footer-outer"><div id="cxo-footer-inner"><p class="footer-container"><span>Site by </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span> | theme </span><a target="_blank" rel="noopener" href="https://github.com/Longlongyu/hexo-theme-Cxo"><span>Cxo</span></a></p><i class="fa fa-user"> </i><span id="busuanzi_value_site_uv"></span><span> | </span><i class="fa fa-eye"> </i><span id="busuanzi_value_site_pv"></span><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?" + 'true';
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script></div></footer><!-- catelog--><div class="toc-wrapper" style="top: 70vh;"><div class="toc-catalog"><i class="fa fa-list"> </i><span>CATALOG</span></div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E6%83%85%E4%B9%A6%EF%BC%88bushi%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">电子情书（bushi）</span></a></li></ol></div><!-- top--><i class="fa fa-arrow-up close" id="go-up" aria-hidden="true"></i></body></html>
